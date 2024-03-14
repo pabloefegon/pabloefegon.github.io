@@ -1,0 +1,587 @@
+/* estilos generales */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.6px;
+    word-spacing: -0.4px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: url('pics/Untitled10.png');
+
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+/* estilos seccion header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0;
+}
+
+#logo-header {
+    width: 20%;
+    margin: 0 2%;
+
+}
+
+#logo-header img {
+
+    height: 70px;
+}
+
+#logo-header a {}
+
+nav {
+
+    width: 30%;
+    height: 100%;
+
+}
+
+header nav ul {
+
+    display: flex;
+    justify-content: right;
+
+}
+
+header nav ul li {
+
+    display: inline;
+    margin: 0 3%;
+
+}
+
+header nav ul li a {
+
+    text-decoration: none;
+    color: #317083;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+/* estilos seccion banner foto grande */
+#paisaje-scroll-inicio {
+    min-height: 450px;
+    background: url('pics/fondo-playa.png');
+    background-position: 50% 60%;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#paisaje-scroll-inicio-texto {
+    margin-top: 250px;
+    margin-right: 40%;
+    font-size: 35px;
+    font-family: 'Silkscreen', cursive;
+
+    color: white;
+}
+
+.cuadro-transparente img {
+
+    width: 100%;
+
+}
+
+#cuadro-transparente-1 {
+
+    width: 7%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#cuadro-transparente-2 {
+
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+
+}
+
+#cuadro-transparente-grande {
+
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+
+}
+
+#cuadro-transparente-borde-bottom {
+
+    width: 100%;
+    position: absolute;
+    bottom: -4%;
+
+}
+
+#cuadro-transparente-borde-top {
+
+    width: 100%;
+    position: absolute;
+    top: -2%;
+
+}
+
+/* estilos seccion de foto con texto de presentacion */
+#seccion-presentacion {
+
+    width: 100%;
+    min-height: 200px;
+    margin-top: 2%;
+    background-color: #ffffffc9;
+
+}
+
+
+#seccion-presentacion img {
+
+    width: 40%;
+
+}
+
+#seccion-presentacion-texto {
+
+    width: 55%;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#seccion-presentacion-texto span {
+
+    font-weight: 900;
+
+}
+
+
+
+#seccion-presentacion .contenedor {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* estilos seccion de lista de proyectos */
+
+#seccion-proyectos {
+
+    margin-top: 2%;
+}
+
+#lista-proyectos {
+
+    width: 100%;
+
+}
+
+.proyecto-entrada {
+
+    background-color: #8fc1e390;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+
+}
+
+.proyecto-entrada-texto {
+
+    background-color: #5084a590;
+    color: #f7f9fb;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proyecto-entrada-fotos {
+
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+
+}
+
+.proyecto-entrada-fotos a {
+
+    margin: 1%;
+    width: 50%;
+
+}
+
+.proyecto-entrada-fotos a img {
+
+    width: 100%;
+
+}
+
+/* seccion footer */
+footer {
+
+    background-color: #687864e8;
+    color: #f7f9fb;
+    margin-top: 2%;
+    padding: 1% 0;
+
+}
+
+#seccion-contactos ul {
+
+    text-align: center;
+}
+
+#seccion-contactos ul li {
+
+    display: inline;
+    padding: 0 2%;
+    color: white;
+}
+
+
+#seccion-contactos ul li a {
+
+    color: white;
+}
+
+/* ESTILOS RESPONSIVE DESIGN -media query- */
+
+@media (max-width: 990px) {
+
+
+    body {
+
+        background-size: auto;
+
+    }
+
+    /* estilos seccion header -query- */
+
+    #logo-header img {
+
+        height: 40px;
+    }
+
+    header nav ul {
+
+        margin-right: 5%;
+
+    }
+
+
+    header nav ul li a {
+
+        font-size: 14px;
+
+    }
+
+    /* estilos seccion banner foto grande -query- */
+    #paisaje-scroll-inicio {
+        min-height: 300px;
+        background: url('pics/fondo-playa-responsive.png');
+        background-position: 40% 0%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+    #paisaje-scroll-inicio-texto {
+        margin-top: 190px;
+        margin-right: 40%;
+        font-size: 16px;
+
+    }
+
+
+    #cuadro-transparente-1 {
+
+        width: 13%;
+        top: 20%;
+        left: 30%;
+    }
+
+    #cuadro-transparente-2 {
+
+        width: 17%;
+        top: 30%;
+        left: 2%;
+
+    }
+
+
+    #cuadro-transparente-grande {
+
+        width: 50%;
+        top: 25%;
+        left: 70%;
+
+    }
+
+    #cuadro-transparente-borde-bottom {
+
+        width: 200%;
+        bottom: -3%;
+
+    }
+
+    #cuadro-transparente-borde-top {
+
+        width: 200%;
+        top: -3%;
+
+    }
+
+    /* estilos seccion de foto con texto de presentacion -query- */
+    #seccion-presentacion {
+
+        margin-top: 5%;
+
+    }
+
+    #seccion-presentacion .contenedor {
+
+        flex-direction: column;
+
+    }
+
+    #seccion-presentacion-texto {
+
+        order: 1;
+        width: 100%;
+        margin: 5% 0;
+        font-size: 14px;
+
+        text-align: center;
+
+    }
+
+    #seccion-presentacion .contenedor img {
+
+        order: 2;
+        width: 80%;
+        margin: 3% 0;
+    }
+
+    /* estilos seccion de lista de proyectos -query- */
+
+    #seccion-proyectos {
+
+        margin-top: 5%;
+    }
+
+    #seccion-proyectos .contenedor {
+
+        width: 90%;
+    }
+
+    .proyecto-entrada {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .proyecto-entrada-texto {
+
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .proyecto-entrada-texto p {
+
+        margin: 5% 10%;
+
+    }
+
+    .proyecto-entrada-fotos {
+
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        justify-content: space-evenly;
+
+
+    }
+
+    .proyecto-entrada-fotos a {
+
+        margin: 3% 0;
+        width: 40%;
+
+    }
+
+    /* seccion footer -query- */
+footer {
+
+    margin-top: 5%;
+
+}
+
+
+}
