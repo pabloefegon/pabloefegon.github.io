@@ -367,6 +367,21 @@ header nav ul li a {
 
 }
 
+.proyecto-entrada-texto .text-box {
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proyecto-entrada-texto a {
+
+    text-decoration: none;
+}
+
+
 .proyecto-entrada-fotos {
 
     width: 40%;
